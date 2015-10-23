@@ -9,14 +9,14 @@ namespace Mathmagician
 {
     public class NaturalNumbers
     {
-        private int first; //data member
+        protected int first; //data member
 
         public NaturalNumbers()
         {
             first = 1;
         }
 
-        public int GetNext(int x)
+        public virtual int GetNext(int x)
         {
             return x+1;
         }
