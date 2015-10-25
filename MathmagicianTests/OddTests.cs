@@ -4,6 +4,7 @@ using Mathmagician;
 
 namespace MathmagicianTests
 {
+    [TestClass]
     public class OddTests
     {
         [TestMethod]
@@ -17,7 +18,7 @@ namespace MathmagicianTests
         public void OddShouldPrintFirstNumber()
         {
             OddNumbers odd = new OddNumbers();
-            int expected = 2;
+            int expected = 1;
             int actual = odd.GetFirst();
             Assert.AreEqual(expected, actual);
         }
@@ -26,8 +27,8 @@ namespace MathmagicianTests
         public void OddShouldPrintNextNumber()
         {
             OddNumbers odd = new OddNumbers();
-            int input = 2;
-            int expected = 4;
+            int input = 3;
+            int expected = 5;
             int actual = odd.GetNext(input);
             Assert.AreEqual(expected, actual);
         }
@@ -47,7 +48,7 @@ namespace MathmagicianTests
         {
             OddNumbers odd = new OddNumbers();
             int length = 7;
-            string expected = "1 3 5 7 9 11 13 15";
+            string expected = "1 3 5 7 9 11 13";
             string actual = odd.ToString(odd.GetSequence(length));
             Assert.AreEqual(expected, actual);
         }
