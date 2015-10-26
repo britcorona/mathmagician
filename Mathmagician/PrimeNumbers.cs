@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class EvenNumbers : NaturalNumbers
+    public class PrimeNumbers : NaturalNumbers
     {
-
-        public EvenNumbers()
+        public PrimeNumbers()
         {
             first = 2;
-            increment = 2;
+            increment = 0;
         }
-
     }
 }
