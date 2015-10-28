@@ -19,6 +19,12 @@ namespace Mathmagician
             int next = a + increment;
             increment = a;
             return next;
+
+            /* Another solution
+            int next = increment;
+            increment = a;
+            return x + next;
+            */
         }
     }
 }
